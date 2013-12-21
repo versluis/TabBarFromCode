@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MasterTabBarController.h
 //  TabBarFromCode
 //
 //  Created by Jay Versluis on 21/12/2013.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-@property (nonatomic, strong) UIColor *backgroundColor;
+@interface MasterTabBarController : UITabBarController
 
 @end

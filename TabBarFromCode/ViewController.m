@@ -10,14 +10,24 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) IBOutlet UILabel *label;
+
 @end
 
 @implementation ViewController
 
+- (UIColor *)backgroundColor {
+    if (!_backgroundColor) {
+        _backgroundColor = [UIColor purpleColor];
+    }
+    return _backgroundColor;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.view.backgroundColor = self.backgroundColor;
+    self.label.text = self.title;
 }
 
 - (void)didReceiveMemoryWarning

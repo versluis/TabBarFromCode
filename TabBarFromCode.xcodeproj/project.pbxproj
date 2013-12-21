@@ -21,6 +21,7 @@
 		D227D8A618665785003D6458 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D227D88818665785003D6458 /* UIKit.framework */; };
 		D227D8AE18665785003D6458 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D227D8AC18665785003D6458 /* InfoPlist.strings */; };
 		D227D8B018665785003D6458 /* TabBarFromCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D227D8AF18665785003D6458 /* TabBarFromCodeTests.m */; };
+		D227D8BB1866581C003D6458 /* MasterTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D227D8BA1866581C003D6458 /* MasterTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		D227D8AB18665785003D6458 /* TabBarFromCodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBarFromCodeTests-Info.plist"; sourceTree = "<group>"; };
 		D227D8AD18665785003D6458 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D227D8AF18665785003D6458 /* TabBarFromCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarFromCodeTests.m; sourceTree = "<group>"; };
+		D227D8B91866581C003D6458 /* MasterTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTabBarController.h; sourceTree = "<group>"; };
+		D227D8BA1866581C003D6458 /* MasterTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				D227D89618665785003D6458 /* Main.storyboard */,
 				D227D89918665785003D6458 /* ViewController.h */,
 				D227D89A18665785003D6458 /* ViewController.m */,
+				D227D8B91866581C003D6458 /* MasterTabBarController.h */,
+				D227D8BA1866581C003D6458 /* MasterTabBarController.m */,
 				D227D89C18665785003D6458 /* Images.xcassets */,
 				D227D88B18665785003D6458 /* Supporting Files */,
 			);
@@ -252,6 +257,7 @@
 				D227D89B18665785003D6458 /* ViewController.m in Sources */,
 				D227D89518665785003D6458 /* AppDelegate.m in Sources */,
 				D227D89118665785003D6458 /* main.m in Sources */,
+				D227D8BB1866581C003D6458 /* MasterTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
