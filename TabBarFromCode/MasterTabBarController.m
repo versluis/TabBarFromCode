@@ -38,17 +38,37 @@
     vc2.title = @"Two";
     vc3.title = @"Three";
     vc4.title = @"Four";
-
+    
     NSArray *controllers = @[vc1, vc2, vc3, vc4];
+    
     
     // populate our tab bar controller with the above
     [self setViewControllers:controllers animated:YES];
+    
+    // wait five seconds then call selector
+    [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(setLessViewcontrollers) userInfo:nil repeats:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)setLessViewcontrollers {
+    
+    // let's create several View Controllers with different colours each
+    ViewController *vc1 = [self createViewcontrollerWithColor:[UIColor orangeColor]];
+    ViewController *vc2 = [self createViewcontrollerWithColor:[UIColor magentaColor]];
+    
+    vc1.title = @"One";
+    vc2.title = @"Two";
+    
+    NSArray *lessControllers = @[vc1, vc2];
+    
+    // switch to less controllers
+    [self setViewControllers:lessControllers animated:YES];
 }
 
 /*
@@ -63,7 +83,7 @@
 */
 
 - (ViewController *)createViewcontrollerWithColor:(UIColor *)color {
- 
+
 //    ViewController *newViewcontroller = [[ViewController alloc]init];
 //    newViewcontroller.backgroundColor = color;
 
